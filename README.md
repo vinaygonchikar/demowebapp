@@ -12,6 +12,9 @@ hi
 * git
 * maven
 * tomcat
+* * git
+* maven
+* tomcat
 
 ## Eclipse Project setup
 * Use git clone to pull project into workspace directory
