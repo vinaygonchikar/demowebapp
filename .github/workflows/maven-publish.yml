@@ -1,0 +1,24 @@
+
+name: print
+
+on:
+  push:
+
+
+jobs:
+  print:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build with Maven
+      run: |
+        echo "TAG_NAME=$(VINAY)" >> $GITHUB_ENV
+
+    - name: Publish to GitHub Packages Apache Maven
+      run: echo "${{ env.TAG_NAME }}"
