@@ -18,7 +18,7 @@ jobs:
 
     - name: Build with Maven
       run: |
-        echo "TAG_NAME=$(VINAY)" >> $GITHUB_ENV
+        echo "TAG_NAME=VINAY" >> $GITHUB_ENV
 
     - name: Publish to GitHub Packages Apache Maven
       run: echo "${{ env.TAG_NAME }}"
